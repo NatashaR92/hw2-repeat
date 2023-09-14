@@ -6,6 +6,9 @@
   --c-backgraund-light: #fafafa;
   --c-primary-light-tr: #ffffffb2;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: var(--c-primary);
@@ -71,7 +74,7 @@ button {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  gap: 24px;
+
 }
 .header-inner {
   display: flex;
@@ -83,6 +86,14 @@ button {
 .header-socials {
   display: flex;
   gap: 18px;
+}
+.header-socials-link {
+  fill: none;
+  stroke: var(--c-primary);
+  
+}
+.header-socials-link:hover {
+  stroke: var(--c-brand);
 }
 .logo {
   align-items: center;
@@ -124,10 +135,18 @@ button {
 }
 
 .hero-inner {
+  background-image: url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   background-color: var(--c-backgraund);
   padding: 380px 40px 40px;
   border-radius: 30px;
+  
 }
+
+
 
 .hero-title {
   max-width: 464px;
@@ -171,7 +190,7 @@ button {
   color: var(--color-brand); /*HEX*/
 }
 
-.hero-scroll-down {
+.hero-arrow {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -181,10 +200,36 @@ button {
   line-height: 1.28;
   letter-spacing: -0.03em;
 }
-.hero-scroll-down:hover {
+.hero-arrow:hover {
   color: var(--c-brand);
 }
+.hero-arrow-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
+  fill: var(--c-brand);
+  background-color: var(--c-backgraund-light);
+  border-radius: 50%;
+  animation: bounce 1s infinite reverse;
+}
 
+@keyframes bounce {
+  0% {
+transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.hero-arrow:hover .hero-arrow-link {
+  fill: var(--c-primary);
+}
 /*Advantage section*/
 .advantage-section {
   background-color: var(--c-backgraund);
@@ -199,9 +244,13 @@ button {
   border-right: 1px solid var(--c-primary-light-tr);
 }
 .advantage-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 62px;
   height: 62px;
   margin-bottom: 22px;
+  fill: var(--c-brand);
   border: 1px solid var(--c-primary-light-tr);
   border-radius: 50%;
 }

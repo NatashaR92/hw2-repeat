@@ -21,7 +21,7 @@
               >
               <span class="logo-accent">Simply</span> chocolate</a
             >
-            <svg width="24px">
+            <svg width="24px" height="24px">
               <use href="./images/icon.svg#icon-logo-chocolate"></use>
             </svg>
 
@@ -44,13 +44,13 @@
             </ul>
           </nav>
           <div class="header-socials">
-            <a href="#" target="_blank">
-              <svg width="24px">
+            <a class="header-socials-link" href="#" target="_blank">
+              <svg width="24px" height="24px">
                 <use href="./images/icon.svg#icon-instagram"></use>
               </svg>
             </a>
-            <a href="#" target="_blank">
-              <svg width="24px">
+            <a class="header-socials-link" href="#" target="_blank">
+              <svg width="24px" height="24px">
                 <use href="./images/icon.svg#icon-twitter"></use>
               </svg>
             </a>
@@ -70,11 +70,13 @@
             <div class="hero-actions">
               <button class="button-primary" type="button">Buy now</button>
               <a class="hero-button" href="#">How it’s made</a>
-              <a class="hero-scroll-down" href="#">
+              <a class="hero-arrow" href="#advantage-section">
                 scroll down
-                <svg width="24px">
-                  <use href="./images/icon.svg#icon-scroll-icon"></use>
+                <span class="hero-arrow-link">
+                <svg width="22px" height="22px">
+                  <use href="./images/scroll-icon.svg#scroll-icon"></use>
                 </svg>
+              </span>
               </a>
             </div>
           </div>
@@ -82,14 +84,16 @@
       </section>
 
       <!--advantage-section-->
-      <section class="advantage-section">
+      <section id="advantage-section" class="advantage-section">
         <div class="container">
           <h2 class="visually-hidden">Our advantades</h2>
           <ul class="advantage-list">
             <li class="advantage-item">
+              <div class="advantage-icon">
               <svg width="32px">
                 <use href="./images/icon.svg#icon-chocolatebar"></use>
               </svg>
+            </div>
               <h3 class="advantage-title">Unsurpassed taste</h3>
               <p class="advantage-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -99,9 +103,11 @@
               </p>
             </li>
             <li class="advantage-item">
+              <div class="advantage-icon">
               <svg width="32px">
                 <use href="./images/icon.svg#icon-coin"></use>
               </svg>
+            </div>
               <h3 class="advantage-title">Affordable price</h3>
               <p class="advantage-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -112,11 +118,13 @@
               </p>
             </li>
             <li class="advantage-item">
-              <svg width="32px">
+              <div class="advantage-icon">
+              <svg width="32px" height="32px">
                 <use href="./images/icon.svg#icon-spoon"></use>
               </svg>
+            </div>
               <h3 class="advantage-title">Own production</h3>
-              <p>
+              <p class="advantage-text">
                 We take pride in our own production process, ensuring that every
                 step is carefully crafted to perfection. From selecting the
                 finest ingredients to handcrafting each piece, our attention to
